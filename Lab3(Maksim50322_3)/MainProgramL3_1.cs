@@ -7,7 +7,7 @@ using System.Globalization;
 
 namespace Lab3_Maksim50322_3_
 {
-    internal class MainProgram
+    internal class MainProgramL3_1
     {
         static void Main(string[] args)
         {
