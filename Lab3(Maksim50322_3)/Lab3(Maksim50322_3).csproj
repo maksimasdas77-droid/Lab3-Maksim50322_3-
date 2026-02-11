@@ -49,5 +49,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WhatDay1\WhatDay1.csproj">
+      <Project>{e173b880-8c84-4336-a2ea-96b6693ab172}</Project>
+      <Name>WhatDay1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WhatDay3\WhatDay3.csproj">
+      <Project>{6c90ee57-9448-4365-bd2c-cb72843c837d}</Project>
+      <Name>WhatDay3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WhatDay4\WhatDay4.csproj">
+      <Project>{f6d4f1a4-650c-4ccf-b7b4-c50d46e7cf0a}</Project>
+      <Name>WhatDay4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WhatDay\WhatDay.csproj">
+      <Project>{728bb661-6265-4868-817f-0ec210570b0e}</Project>
+      <Name>WhatDay</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

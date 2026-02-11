@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace WhatDay
 {
-    internal enum MonthName
+    public enum MonthName
     {
         January,
         February,
@@ -25,10 +25,10 @@ namespace WhatDay
         December
     }
 
-    internal class Program
+    public class Program
     {
-        static int[] DaysInMonths = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-        static int[] DaysInMonthsLeap = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+       public static int[] DaysInMonths = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+       public static int[] DaysInMonthsLeap = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
