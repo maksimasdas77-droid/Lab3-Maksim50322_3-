@@ -10,6 +10,30 @@ namespace Lab3_Maksim50322_3_
 {
     public class MainProgramL3_1
     {
+        public delegate bool UniTryParse<T>(string input, out T value);
+        public static T ReadValue<T>(string message, UniTryParse<T> parser)
+        {
+            Console.Write(message);
+            T value;
+
+            while (!parser(Console.ReadLine(), out value))
+            {
+                Console.Write("Некорректный ввод. Попробуйте снова: ");
+            }
+            return value;
+        }
+
+        public static int ReadInt(string message)
+        {
+            Console.Write(message);
+            int value;
+            while(!int.TryParse(Console.ReadLine(), out value))
+            {
+                Console.Write("Некорректный ввод. Попробуйте снова: ");
+            }
+            return value;
+        }
+
         public static bool IsLeapYear(int year)
         {
             return ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0);
@@ -41,12 +65,12 @@ namespace Lab3_Maksim50322_3_
             CultureInfo.CurrentUICulture = new CultureInfo("ru-RU");
             try
             {
-                Console.Write("Введите год: ");
-                int yearNum = int.Parse(Console.ReadLine());
+                //int yearNum = ReadInt("Введите год: ");
+                int yearNum = ReadValue<int>("Введите год: ", int.TryParse);
                 bool isLeapYear = IsLeapYear(yearNum);
 
-                Console.Write("Введите день: ");
-                int dayNum = int.Parse(Console.ReadLine());
+                //int dayNum = ReadInt("Введите день:");
+                int dayNum = ReadValue<int>("Введите день: ", int.TryParse);
 
                 ValidateDay(dayNum, isLeapYear);
                 var result = GetMonthAndDay(dayNum, isLeapYear);
