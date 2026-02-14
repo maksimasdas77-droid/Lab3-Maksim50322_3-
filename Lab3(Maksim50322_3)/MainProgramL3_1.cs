@@ -8,19 +8,19 @@ using WhatDay;
 
 namespace Lab3_Maksim50322_3_
 {
-    internal class MainProgramL3_1
+    public class MainProgramL3_1
     {
-        static bool IsLeapYear(int year)
+        public static bool IsLeapYear(int year)
         {
             return ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0);
         }
-        static void ValidateDay(int day, bool isLeap) 
+        public static void ValidateDay(int day, bool isLeap) 
         {
             int max = isLeap ? 366 : 365; 
             if (day < 1 || day > max) throw new ArgumentOutOfRangeException("Day out of range");
         }
 
-        static (int monthNum, int dayInMonth) GetMonthAndDay(int dayNum, bool isLeap)
+        public static (int monthNum, int dayInMonth) GetMonthAndDay(int dayNum, bool isLeap)
         {
             int[] months = isLeap ? WhatDay.Program.DaysInMonthsLeap : WhatDay.Program.DaysInMonths;
             int month = 0;
@@ -34,7 +34,7 @@ namespace Lab3_Maksim50322_3_
         }
 
 
-            static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
             CultureInfo.CurrentCulture = new CultureInfo("ru-RU");
