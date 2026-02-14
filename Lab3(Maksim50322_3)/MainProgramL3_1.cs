@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
-using WhatDay;
+using WhatDay; //для использования данных из другого проекта
 
 namespace Lab3_Maksim50322_3_
 {
