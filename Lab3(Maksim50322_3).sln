@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.14.36915.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab3(Maksim50322_3)", "Lab3(Maksim50322_3)\Lab3(Maksim50322_3).csproj", "{25EFC36C-D274-465B-962F-1FA93B500025}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2D533B0B-54B3-4AE6-BEF1-0F0E83CCE910} = {2D533B0B-54B3-4AE6-BEF1-0F0E83CCE910}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatDay", "WhatDay\WhatDay.csproj", "{728BB661-6265-4868-817F-0EC210570B0E}"
 EndProject
@@ -12,6 +15,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatDay3", "WhatDay3\WhatDay3.csproj", "{6C90EE57-9448-4365-BD2C-CB72843C837D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatDay4", "WhatDay4\WhatDay4.csproj", "{F6D4F1A4-650C-4CCF-B7B4-C50D46E7CF0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatDayWithNewKnowledge", "WhatDayWithNewKnowledge\WhatDayWithNewKnowledge.csproj", "{2D533B0B-54B3-4AE6-BEF1-0F0E83CCE910}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6C90EE57-9448-4365-BD2C-CB72843C837D} = {6C90EE57-9448-4365-BD2C-CB72843C837D}
+		{728BB661-6265-4868-817F-0EC210570B0E} = {728BB661-6265-4868-817F-0EC210570B0E}
+		{E173B880-8C84-4336-A2EA-96B6693AB172} = {E173B880-8C84-4336-A2EA-96B6693AB172}
+		{F6D4F1A4-650C-4CCF-B7B4-C50D46E7CF0A} = {F6D4F1A4-650C-4CCF-B7B4-C50D46E7CF0A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +50,10 @@ Global
 		{F6D4F1A4-650C-4CCF-B7B4-C50D46E7CF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6D4F1A4-650C-4CCF-B7B4-C50D46E7CF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6D4F1A4-650C-4CCF-B7B4-C50D46E7CF0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D533B0B-54B3-4AE6-BEF1-0F0E83CCE910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D533B0B-54B3-4AE6-BEF1-0F0E83CCE910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D533B0B-54B3-4AE6-BEF1-0F0E83CCE910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D533B0B-54B3-4AE6-BEF1-0F0E83CCE910}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
