@@ -32,13 +32,15 @@ namespace WhatDayWithNewKnowledge
                     if (daynum < 1 || daynum > (isLeap ? 366 : 365))
                     {
                         Console.WriteLine("Ошибка: такого дня в этом году нет. Попробуйте снова.\n");
+                        Console.WriteLine("...нажмите любую клавишу для продолжения...");
+                        Console.ReadLine();
                         continue;
                     }
 
                         //throw new ArgumentOutOfRangeException("Day out of range");
                     DateTime date = new DateTime(yearnum, 1, 1).AddDays(daynum - 1);
 
-                    if (isLeap) Console.WriteLine("ВИСОКОСНЫЙ ГОД");
+                    if (isLeap) Console.WriteLine("\nВИСОКОСНЫЙ ГОД");
 
                     Console.WriteLine($"\nРезультаты:");
                     Console.WriteLine($"стардартный: {date:d MMMM yyyy}");
